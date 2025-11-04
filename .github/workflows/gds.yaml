@@ -16,6 +16,7 @@ jobs:
       - name: Build GDS
         uses: TinyTapeout/tt-gds-action@ttgf0p2
         with:
+          tools-repo: htfab/tt-support-tools
           pdk: gf180mcuD
 
   precheck:
@@ -24,6 +25,8 @@ jobs:
     steps:
       - name: Run Tiny Tapeout Precheck
         uses: TinyTapeout/tt-gds-action/precheck@ttgf0p2
+        with:
+          tools-repo: htfab/tt-support-tools
 
   gl_test:
     needs: gds
@@ -36,6 +39,8 @@ jobs:
 
       - name: GL test
         uses: TinyTapeout/tt-gds-action/gl_test@ttgf0p2
+        with:
+          tools-repo: htfab/tt-support-tools
 
   viewer:
     needs: gds
@@ -45,3 +50,5 @@ jobs:
       id-token: write   # to verify the deployment originates from an appropriate source
     steps:
       - uses: TinyTapeout/tt-gds-action/viewer@ttgf0p2
+        with:
+          tools-repo: htfab/tt-support-tools
