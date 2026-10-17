@@ -1,0 +1,27 @@
+source:
+  url: https://github.com/htfab/ttgf0p2-asicle2
+  original_url: null
+  kind: fork
+  why: GitHub fork of the upstream repository
+  licence: null
+  upstream_default_branch: main
+tapeouts:
+- org: tinytapeout
+  run: ttgf0p2
+  slot: tt_um_htfab_asicle2
+  project: Asicle v2
+  size: 2x2
+  kind: digital (Verilog)
+  commit: 617a9134567e4e4d386124cd413035cbd1c5fa53
+  commit_source: commit from the shuttle repo's projects/<name>/commit_id.json
+  tag: tinytapeout/ttgf0p2/tt_um_htfab_asicle2
+  branch: tapeout/tinytapeout/ttgf0p2/tt_um_htfab_asicle2
+  page: https://app.tinytapeout.com/shuttles/ttgf0p2
+generated: '2026-10-17T23:47:47Z'
+tooling: https://github.com/wafer-space/wafer.space-bench
+index: https://wafer-space-bench.github.io
+branches:
+- about
+- tapeout/tinytapeout/ttgf0p2/tt_um_htfab_asicle2
+- upstream/dev-tools
+- upstream/main
